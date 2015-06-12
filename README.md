@@ -1,7 +1,8 @@
 # start-to-use-GitHub
 This is an exercise about how to use GitHub.
 
-This project updating ever I get free time.
+Contents copy from [http://opensourcerer.diy.org/](http://opensourcerer.diy.org/)
+
 
 ##1. Get a GitHub Account
 
