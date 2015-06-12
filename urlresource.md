@@ -1,4 +1,8 @@
-#URL Resources: Javascript-HTML5-CSS3-Less-Regular and Node.js 
+#FE URL Resources: 
+
+[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+
+Javascript-HTML5-CSS3-Less-Regular and Node.js 
 
 - [Javascript](#javascript)
 - [Node.js](#node.js)
