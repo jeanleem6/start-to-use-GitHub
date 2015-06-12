@@ -45,12 +45,12 @@ We'll refer to both Mac's Terminal and Window's Git Bash as just Bash.
 Let's check our Git. In the Bash window type:
 command:
 
-#A. version:
+###A. version:
 ```
 git --version
 ```
 
-#B. Configure Git
+###B. Configure Git
 We need to tell Git who we are so that when we move files around it knows who is moving them. Type the following lines one at a time into Bash and inside of the quotations add the email you signed up to GitHub with and your GitHub username.
 
 ```
@@ -58,7 +58,7 @@ git config --global user.email "yourGitHub@email.com"
 git config --global user.name "yourGitHubusername"
 ```
 
-#C. Cloning
+###C. Cloning
 
 . Navigate to Folder:
 
@@ -74,7 +74,7 @@ cd My\ Documents/
 The slashes let Bash know that there is a space between 'My' and 'Documents'
 Now we're inside the Documents folder, let's put the DIY open-sourcerer repo in it!
 
-#. Clone the Repo
+###. Clone the Repo
 Each repo on GitHub.com has an address for its location. You'll see it following the HTTP and SSH buttons near the top middle of the page. Click on HTTP, this is the address you'll use.
 
 ![HTTP Address](http://diy-visualpedia.s3.amazonaws.com/http-addie.png)
