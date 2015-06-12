@@ -97,3 +97,99 @@ ls
 You should see a list of filenames that look exactly like the files you see on the website for both DIY and your account page.
 
 ![cloned files](http://diy-visualpedia.s3.amazonaws.com/cloned-files.png)
+
+###. Connect to Original and Pull Changes
+
+We have one last thing to do. Because this is an open project, we can expect that may others will be doing the same as us: forking, cloning and making changes to the files. We want to make sure we're always working with the most up to date files. To ensure this, we'll connect our local copy to the DIY original so that we can pull in the most recent changes before we work on ours.
+
+Go back to the DIY page for [Open-Sourcerer](http://www.github.com/diy/open-sourcerer), just like our fork had an address, this repo has an address too. We're going to name this connection upstream (because this is where updates will come from).
+
+Type
+
+```
+git remote add upstream https://github.com/diy/open-sourcerer.git 
+```
+
+###. Pull Changes
+
+Before we make any additions, we want to make sure we have the latest files by pulling in any changes from the master branch upstream.
+
+Type
+
+```
+git pull upstream master
+```
+
+If it says 'Already up to date' then no changes have been made since you started setting up! If there were changes, it updated your files. In both cases, your files will match the files on DIY's GitHub.com repo.
+
+##6. Edit Story
+
+Bash is awesome - we can even open files with it.
+
+Macs Type:
+
+```
+open collaborative-story.txt
+```
+
+PCs Type:
+
+```
+start notepad "collaborative-story.txt"
+```
+
+It should open up the file in your computer's text editor. Add your own portion of the story after the last sentence.
+
+![add to story](http://diy-visualpedia.s3.amazonaws.com/story-addition.png)
+
+When you're done, save the file. Make sure you keep it saved as a .txt file.
+
+##7. Push Changes
+
+Now we'll push (aka add) our changes to our forked copy and then submit them to be added to the DIY original file.
+
+Return to Bash and let's check what changes we've made. Type:
+
+```
+git status
+```
+
+![git status](http://diy-visualpedia.s3.amazonaws.com/git-status.png)
+
+This shows you what files you've made changes to - it should say collaborative-story.txt. Let's see the difference before and after our changes with diff.
+
+```
+git diff
+```
+
+![git diff](http://diy-visualpedia.s3.amazonaws.com/git-diff.png)
+
+You'll see a plus and minus sign showing the before and after. Press Q to exit the diff.
+
+##8. Add Changes
+
+Let's tell Git what files we want to add, what our message about our changes is, and push those changes to our fork.
+
+![git status add commit push](http://diy-visualpedia.s3.amazonaws.com/git-status-add-commit-push.png)
+
+Start by adding your changed file:
+
+```
+git add collaborative-story.txt
+```
+
+##9. Commit Changes
+
+Now we'll add a message describing our changes and attach that to our addition.
+
+```
+git commit -m "your description of changes"
+```
+
+##10. Push Changes to our Fork
+
+Now, finally, we'll actually push the file and message to our fork on GitHub.com. Remember our fork's name is origin (it's our original file) and the branch is master.
+
+```
+git push origin master
+```
