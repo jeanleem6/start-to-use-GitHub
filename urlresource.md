@@ -2,14 +2,17 @@
 
 [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 
-Javascript-HTML5-CSS3-Less-Regular and Node.js 
-
+- [FE community](#fe-community)
 - [Javascript](#javascript)
 - [Node.js](#node.js)
 - [HTML5](#html5)
 - [CSS3](#css3)
 - [Less](#less)
 - [Regular](#regular)
+
+##FE community
+
+ .[http://segmentfault.com/](http://segmentfault.com/)
 
 ##Javascript
 
@@ -20,7 +23,7 @@ Javascript-HTML5-CSS3-Less-Regular and Node.js
 
 ##Node.js
 
-.[nodeSchoole](http://nodeschool.io/zh-cn/)
+.[nodeSchool](http://nodeschool.io/zh-cn/)
 
 
 
