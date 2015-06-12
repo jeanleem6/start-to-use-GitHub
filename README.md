@@ -34,7 +34,7 @@ In Windows, hit Ok or Next for all options, then finish (you don't have to revie
 
 5. Use Bash
 
-[![terminal and git bash](http://diy-visualpedia.s3.amazonaws.com/terminal-bash-01.png)]
+![terminal and git bash](http://diy-visualpedia.s3.amazonaws.com/terminal-bash-01.png)
 
 In Mac you've already got Bash. If you go to your Launchpad and search for Terminal, this is the application you'll use.
 
@@ -77,7 +77,7 @@ Now we're inside the Documents folder, let's put the DIY open-sourcerer repo in 
 . Clone the Repo
 Each repo on GitHub.com has an address for its location. You'll see it following the HTTP and SSH buttons near the top middle of the page. Click on HTTP, this is the address you'll use.
 
-[![HTTP Address](http://diy-visualpedia.s3.amazonaws.com/http-addie.png)]
+![HTTP Address](http://diy-visualpedia.s3.amazonaws.com/http-addie.png)
 
 ```
 git clone https://github.com/YOURUSERNAME/open-sourcerer.git
@@ -94,3 +94,6 @@ Now we're inside our very own copy of the files. Let's use ls to list the conten
 ```
 ls
 ```
+You should see a list of filenames that look exactly like the files you see on the website for both DIY and your account page.
+
+![cloned files](http://diy-visualpedia.s3.amazonaws.com/cloned-files.png)
