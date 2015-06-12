@@ -62,15 +62,15 @@ C. Cloning
 
 . Navigate to Folder:
 
-	In Macs type:
-	```
-	cd Documents
-	```
+In Macs type:
+```
+cd Documents
+```
 
-	In Windows type:
-	```
-	cd My\ Documents/
-	```
+In Windows type:
+```
+cd My\ Documents/
+```
 The slashes let Bash know that there is a space between 'My' and 'Documents'
 Now we're inside the Documents folder, let's put the DIY open-sourcerer repo in it!
 
