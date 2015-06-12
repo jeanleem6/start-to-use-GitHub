@@ -5,7 +5,7 @@ This project updating ever I get free time.
 
 ##1. Get a GitHub Account
 
-First things first, create a free account on www.Github.com(http://www.Github.com). If you're under 13, you'll need a parent's email and help to set up the account.
+First things first, create a free account on [www.Github.com](http://www.Github.com). If you're under 13, you'll need a parent's email and help to set up the account.
 
 ##2. Create a Repo
 
@@ -28,7 +28,7 @@ You've now got a text box that you can type directly into. Once you've made chan
 
 A few of the steps may require your computer's password if one is set
 
-Visit git-scm.com(http://git-scm.com) and download the latest version for your operating system.
+Visit [git-scm.com](http://git-scm.com) and download the latest version for your operating system.
 In Mac, you won't notice anything or see the application installed, but it will install on your computer.
 In Windows, hit Ok or Next for all options, then finish (you don't have to review notes).
 
