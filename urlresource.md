@@ -17,6 +17,8 @@
 
  . [http://segmentfault.com/](http://segmentfault.com/)
 
+ . [css88]{http://www.css88.com/}
+
 
 ##Javascript
 
@@ -30,6 +32,8 @@
 ##Node.js
 
 .[nodeSchool](http://nodeschool.io/zh-cn/)
+
+.[art of node](https://github.com/maxogden/art-of-node/blob/master/readme.md)
 
 
 
