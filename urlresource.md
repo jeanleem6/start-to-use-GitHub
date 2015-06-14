@@ -12,13 +12,15 @@
 
 ##FE community
 
- .[http://segmentfault.com/](http://segmentfault.com/)
+ . [stackoverflow](http://stackoverflow.com/questions/tagged/javascript)
+
+ . [http://segmentfault.com/](http://segmentfault.com/)
 
 ##Javascript
 
-  .[developer.mozilla.org](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)
+  . [developer.mozilla.org](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)
 
-  .[推动Web向前发展 | 如何参与网页标准和浏览器的演化](http://movethewebforward.org/cn/)
+  . [推动Web向前发展 | 如何参与网页标准和浏览器的演化](http://movethewebforward.org/cn/)
 
 
 ##Node.js
