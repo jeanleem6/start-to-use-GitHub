@@ -28,6 +28,8 @@
 
   . [Ajax Tutorial](http://www.tizag.com/ajaxTutorial/)
 
+  . [npmjs](https://www.npmjs.com/)
+
 
 ##Node.js
 
