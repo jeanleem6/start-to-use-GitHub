@@ -17,7 +17,7 @@
 
  . [http://segmentfault.com/](http://segmentfault.com/)
 
- . [css88]{http://www.css88.com/}
+ . [css88](http://www.css88.com/)
 
 
 ##Javascript
