@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		#btn {display: inline-block; padding:3px 15px; text-decoration: none}
+		.focus {background-color: #339; color:#fff}
+	</style>
 </head>
 
 <body>
@@ -23,8 +27,8 @@
 </ul>
 
 <script>
-var btn = document.getElementById("btn"),
-	EventUtil = {
+// Event initial
+var EventUtil = {
 		addHandler: function(element,type,handler) {
 			if(element.addEventListener) {
 				element.addEventListener(type,handler,false);
@@ -65,7 +69,11 @@ var btn = document.getElementById("btn"),
 		}
 	}
 
-var div = document.getElementById("myDiv");
+//* Demo
+var div = document.getElementById("myDiv"),
+	btn = document.getElementById("btn")	;
+
+//** Show contextmenu
 EventUtil.addHandler(div, "contextmenu", function(event){
     event = EventUtil.getEvent(event);
     EventUtil.preventDefault(event);
@@ -74,8 +82,57 @@ EventUtil.addHandler(div, "contextmenu", function(event){
     menu.style.top = event.clientY + "px";
     menu.style.visibility = "visible";
 });
+//** Hide contextmenu
 EventUtil.addHandler(document, "click", function(event){
     document.getElementById("myMenu").style.visibility = "hidden";
+});
+
+//** Popup tips beforeunload
+// EventUtil.addHandler(window, "beforeunload",function(event){
+//     event = EventUtil.getEvent(event);
+//     var message = "I'm really going to miss you if you go.";
+//     event.returnValue = message;
+//     return message;
+// });
+
+//** Event Urlchange
+EventUtil.addHandler(window, "hashchange", function(event){
+     console.log("Old URL: " + event.oldURL + "\nNew URL: " + event.newURL);
+});
+
+//** Load dynamic images
+EventUtil.addHandler(window,'load',function(){
+    var img = document.createElement("img");
+    EventUtil.addHandler(img,'load',function(e){
+        e = EventUtil.getEvent(e);
+        console.log(EventUtil.getTarget(e).src);
+    });
+    img.src = "http://dummyimage.com/184x125/e0e0e0/ffffff";
+    document.body.appendChild(img);
+});
+
+//** set&removeAttribute
+EventUtil.addHandler(btn,'mouseover',function(e){
+	EventUtil.preventDefault(e);
+	btn.setAttribute('class', 'focus');
+});
+EventUtil.addHandler(btn,'mouseout',function(e){
+	btn.removeAttribute('class', 'focus');
+});
+
+//** get Coordinate
+EventUtil.addHandler(btn,'click',function(e){
+	EventUtil.preventDefault(e);
+	e = EventUtil.getEvent(e);
+	var pageX = e.pageX,
+	      pageY = e.pageY;
+	if(!pageX) {
+		pageX = e.clientX + (document.body.scrollLeft || document.documentElement.scrollLeft);
+	}
+	if(!pageY) {
+		pageY = e.clientY + (document.body.scrollTop || document.documentElement.scrollTop);
+	}
+	console.log("页面X轴坐标为:"+pageX + " "+ "页面Y轴坐标为:"+pageY);
 });
 </script>
 </body>
